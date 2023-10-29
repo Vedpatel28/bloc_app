@@ -35,18 +35,14 @@ class HomePage extends StatelessWidget {
         children: [
           FloatingActionButton(
             onPressed: () {
-              context.read<CounterBloc>().add(
-                    CounterIncrementEvent(),
-                  );
+              context.read<CounterBloc>().add(CounterIncrementEvent());
             },
             child: const Icon(Icons.add),
           ),
           const SizedBox(width: 20),
           FloatingActionButton(
             onPressed: () {
-              context.read<CounterBloc>().add(
-                    CounterDecrementEvent(),
-                  );
+              context.read<CounterBloc>().add(CounterDecrementEvent());
             },
             child: const Text(
               "-",

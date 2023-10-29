@@ -15,5 +15,3 @@ class IncrementState extends CounterState {
 class DecrementState extends CounterState {
   DecrementState(int decrement) : super(count: decrement);
 }
-
-
