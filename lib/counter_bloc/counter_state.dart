@@ -9,9 +9,16 @@ class CounterInit extends CounterState {
 }
 
 class IncrementState extends CounterState {
-  IncrementState(int increment) : super(count: increment);
+  IncrementState(int increment)
+      : super(
+          count: increment,
+        );
 }
 
 class DecrementState extends CounterState {
-  DecrementState(int decrement) : super(count: decrement);
+  DecrementState(int decrement)
+      : super(
+          count: decrement,
+        );
 }
+
